@@ -40,10 +40,10 @@ class EmployeController extends Controller
         $validated = $request->validate([
             'nom' => 'sometimes|required|string|max:255',
             'prenom' => 'sometimes|required|string|max:255',
-            'email' => 'sometimes|required|email|unique:employes,email,' . $employe->id,
+            'email' => 'sometimes|required|email|unique:employes,email,'.$employe->id,
             'telephone' => 'nullable|string|max:20',
             'adresse' => 'nullable|string|max:255',
-            'matricule' => 'sometimes|required|string|unique:employes,matricule,' . $employe->id,
+            'matricule' => 'sometimes|required|string|unique:employes,matricule,'.$employe->id,
             'poste' => 'nullable|string|max:255',
         ]);
 

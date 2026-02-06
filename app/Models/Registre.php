@@ -13,7 +13,7 @@ class Registre extends Model
         'nom',
         'date_creation',
         'date_fin',
-        'status'
+        'status',
     ];
 
     public function presences()

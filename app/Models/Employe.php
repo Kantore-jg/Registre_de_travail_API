@@ -16,7 +16,7 @@ class Employe extends Model
         'telephone',
         'adresse',
         'matricule',
-        'poste'
+        'poste',
     ];
 
     public function presences()

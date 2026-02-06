@@ -7,10 +7,9 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-
 use App\Http\Controllers\Api\EmployeController;
-use App\Http\Controllers\Api\RegistreController;
 use App\Http\Controllers\Api\PresenceController;
+use App\Http\Controllers\Api\RegistreController;
 
 Route::group([], function () {
     // --- Gestion des Employés ---

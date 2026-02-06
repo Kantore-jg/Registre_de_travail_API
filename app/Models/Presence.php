@@ -15,7 +15,7 @@ class Presence extends Model
         'employe_id',
         'statut',
         'heure_entree',
-        'heure_sortie'
+        'heure_sortie',
     ];
 
     public function registre()
